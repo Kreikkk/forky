@@ -1,0 +1,36 @@
+{
+  "name": "forky",
+  "version": "1.0.0",
+  "description": "fork bet watcher",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js --mode=learn",
+    "lint": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellyb0y/forky.git"
+  },
+  "author": "jellyb0y <https://github.com/jellyb0y>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jellyb0y/forky/issues"
+  },
+  "homepage": "https://github.com/jellyb0y/forky#readme",
+  "devDependencies": {
+    "@types/node": "^13.13.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.5",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "ws": "^7.2.5"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix",
+      "prettier --write"
+    ]
+  }
+}
